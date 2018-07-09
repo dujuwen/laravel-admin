@@ -122,3 +122,11 @@ Other
 License
 ------------
 `laravel-admin` is licensed under [The MIT License (MIT)](LICENSE).
+
+
+Other
+-----------
+[composer 创建一个github 项目，然后可以通过composer下载](https://blog.csdn.net/terry_water/article/details/50477023)
+
+https://packagist.org/packages/encoredjw/laravel-admin
+
