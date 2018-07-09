@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin;
+namespace Encoredjw\Admin;
 
 use Closure;
-use Encore\Admin\Tree\Tools;
+use Encoredjw\Admin\Tree\Tools;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;
 

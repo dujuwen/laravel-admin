@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Encoredjw\Admin\Form\Field;
 
-use Encore\Admin\Form\EmbeddedForm;
-use Encore\Admin\Form\Field;
+use Encoredjw\Admin\Form\EmbeddedForm;
+use Encoredjw\Admin\Form\Field;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 

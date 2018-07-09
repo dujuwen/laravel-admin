@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Layout;
+namespace Encoredjw\Admin\Layout;
 
 use Closure;
 use Illuminate\Contracts\Support\Renderable;

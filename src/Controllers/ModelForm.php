@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Encoredjw\Admin\Controllers;
 
 trait ModelForm
 {

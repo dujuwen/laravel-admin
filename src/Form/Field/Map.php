@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Encoredjwdjw\Admin\Form\Field;
 
-use Encore\Admin\Form\Field;
+use Encoredjwdjw\Admin\Form\Field;
 
 class Map extends Field
 {

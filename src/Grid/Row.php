@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Grid;
+namespace Encoredjw\Admin\Grid;
 
 class Row
 {

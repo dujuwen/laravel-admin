@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Encoredjw\Admin\Grid\Tools;
 
 abstract class BatchAction
 {

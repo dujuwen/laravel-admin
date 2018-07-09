@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Form;
+namespace Encoredjw\Admin\Form;
 
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Form;
+use Encoredjw\Admin\Facades\Admin;
+use Encoredjw\Admin\Form;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;

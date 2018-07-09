@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Encoredjw\Admin\Grid\Displayers;
 
-use Encore\Admin\Admin;
+use Encoredjw\Admin\Admin;
 
 class Checkbox extends AbstractDisplayer
 {
@@ -57,7 +57,7 @@ $('form.grid-checkbox-$name').on('submit', function () {
         _token: LA.token,
         _method: 'PUT'
     };
-    
+
     $.ajax({
         url: "{$this->getResource()}/" + $(this).data('key'),
         type: "POST",

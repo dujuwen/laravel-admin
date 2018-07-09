@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter\Presenter;
+namespace Encoredjw\Admin\Grid\Filter\Presenter;
 
-use Encore\Admin\Facades\Admin;
+use Encoredjw\Admin\Facades\Admin;
 use Illuminate\Contracts\Support\Arrayable;
 
 class Select extends Presenter
@@ -179,7 +179,7 @@ $(document).on('change', ".{$this->getClass($column)}", function () {
                 text : item.$textField
             }));
         });
-        
+
         $(target).trigger('change');
     });
 });

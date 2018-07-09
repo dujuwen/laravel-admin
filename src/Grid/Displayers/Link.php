@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Encoredjw\Admin\Grid\Displayers;
 
 class Link extends AbstractDisplayer
 {

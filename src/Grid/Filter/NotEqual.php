@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter;
+namespace Encoredjw\Admin\Grid\Filter;
 
 class NotEqual extends AbstractFilter
 {

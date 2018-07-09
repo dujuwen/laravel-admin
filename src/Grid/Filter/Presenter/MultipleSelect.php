@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter\Presenter;
+namespace Encoredjw\Admin\Grid\Filter\Presenter;
 
 class MultipleSelect extends Select
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form\Field;
+namespace Encoredjw\Admin\Form\Field;
 
-use Encore\Admin\Form;
+use Encoredjw\Admin\Form;
 
 class Captcha extends Text
 {

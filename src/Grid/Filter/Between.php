@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter;
+namespace Encoredjw\Admin\Grid\Filter;
 
-use Encore\Admin\Admin;
+use Encoredjw\Admin\Admin;
 
 class Between extends AbstractFilter
 {

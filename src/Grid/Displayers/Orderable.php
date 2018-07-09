@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Displayers;
+namespace Encoredjw\Admin\Grid\Displayers;
 
-use Encore\Admin\Admin;
+use Encoredjw\Admin\Admin;
 
 class Orderable extends AbstractDisplayer
 {

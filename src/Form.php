@@ -1,14 +1,14 @@
 <?php
 
-namespace Encore\Admin;
+namespace Encoredjw\Admin;
 
 use Closure;
-use Encore\Admin\Exception\Handler;
-use Encore\Admin\Form\Builder;
-use Encore\Admin\Form\Field;
-use Encore\Admin\Form\Field\File;
-use Encore\Admin\Form\Row;
-use Encore\Admin\Form\Tab;
+use Encoredjw\Admin\Exception\Handler;
+use Encoredjw\Admin\Form\Builder;
+use Encoredjw\Admin\Form\Field;
+use Encoredjw\Admin\Form\Field\File;
+use Encoredjw\Admin\Form\Row;
+use Encoredjw\Admin\Form\Tab;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Http\Request;
@@ -1236,52 +1236,52 @@ class Form
     public static function registerBuiltinFields()
     {
         $map = [
-            'button'         => \Encore\Admin\Form\Field\Button::class,
-            'checkbox'       => \Encore\Admin\Form\Field\Checkbox::class,
-            'color'          => \Encore\Admin\Form\Field\Color::class,
-            'currency'       => \Encore\Admin\Form\Field\Currency::class,
-            'date'           => \Encore\Admin\Form\Field\Date::class,
-            'dateRange'      => \Encore\Admin\Form\Field\DateRange::class,
-            'datetime'       => \Encore\Admin\Form\Field\Datetime::class,
-            'dateTimeRange'  => \Encore\Admin\Form\Field\DatetimeRange::class,
-            'datetimeRange'  => \Encore\Admin\Form\Field\DatetimeRange::class,
-            'decimal'        => \Encore\Admin\Form\Field\Decimal::class,
-            'display'        => \Encore\Admin\Form\Field\Display::class,
-            'divider'        => \Encore\Admin\Form\Field\Divide::class,
-            'divide'         => \Encore\Admin\Form\Field\Divide::class,
-            'embeds'         => \Encore\Admin\Form\Field\Embeds::class,
-            'editor'         => \Encore\Admin\Form\Field\Editor::class,
-            'email'          => \Encore\Admin\Form\Field\Email::class,
-            'file'           => \Encore\Admin\Form\Field\File::class,
-            'hasMany'        => \Encore\Admin\Form\Field\HasMany::class,
-            'hidden'         => \Encore\Admin\Form\Field\Hidden::class,
-            'id'             => \Encore\Admin\Form\Field\Id::class,
-            'image'          => \Encore\Admin\Form\Field\Image::class,
-            'ip'             => \Encore\Admin\Form\Field\Ip::class,
-            'map'            => \Encore\Admin\Form\Field\Map::class,
-            'mobile'         => \Encore\Admin\Form\Field\Mobile::class,
-            'month'          => \Encore\Admin\Form\Field\Month::class,
-            'multipleSelect' => \Encore\Admin\Form\Field\MultipleSelect::class,
-            'number'         => \Encore\Admin\Form\Field\Number::class,
-            'password'       => \Encore\Admin\Form\Field\Password::class,
-            'radio'          => \Encore\Admin\Form\Field\Radio::class,
-            'rate'           => \Encore\Admin\Form\Field\Rate::class,
-            'select'         => \Encore\Admin\Form\Field\Select::class,
-            'slider'         => \Encore\Admin\Form\Field\Slider::class,
-            'switch'         => \Encore\Admin\Form\Field\SwitchField::class,
-            'text'           => \Encore\Admin\Form\Field\Text::class,
-            'textarea'       => \Encore\Admin\Form\Field\Textarea::class,
-            'time'           => \Encore\Admin\Form\Field\Time::class,
-            'timeRange'      => \Encore\Admin\Form\Field\TimeRange::class,
-            'url'            => \Encore\Admin\Form\Field\Url::class,
-            'year'           => \Encore\Admin\Form\Field\Year::class,
-            'html'           => \Encore\Admin\Form\Field\Html::class,
-            'tags'           => \Encore\Admin\Form\Field\Tags::class,
-            'icon'           => \Encore\Admin\Form\Field\Icon::class,
-            'multipleFile'   => \Encore\Admin\Form\Field\MultipleFile::class,
-            'multipleImage'  => \Encore\Admin\Form\Field\MultipleImage::class,
-            'captcha'        => \Encore\Admin\Form\Field\Captcha::class,
-            'listbox'        => \Encore\Admin\Form\Field\Listbox::class,
+            'button'         => \Encoredjw\Admin\Form\Field\Button::class,
+            'checkbox'       => \Encoredjw\Admin\Form\Field\Checkbox::class,
+            'color'          => \Encoredjw\Admin\Form\Field\Color::class,
+            'currency'       => \Encoredjw\Admin\Form\Field\Currency::class,
+            'date'           => \Encoredjw\Admin\Form\Field\Date::class,
+            'dateRange'      => \Encoredjw\Admin\Form\Field\DateRange::class,
+            'datetime'       => \Encoredjw\Admin\Form\Field\Datetime::class,
+            'dateTimeRange'  => \Encoredjw\Admin\Form\Field\DatetimeRange::class,
+            'datetimeRange'  => \Encoredjw\Admin\Form\Field\DatetimeRange::class,
+            'decimal'        => \Encoredjw\Admin\Form\Field\Decimal::class,
+            'display'        => \Encoredjw\Admin\Form\Field\Display::class,
+            'divider'        => \Encoredjw\Admin\Form\Field\Divide::class,
+            'divide'         => \Encoredjw\Admin\Form\Field\Divide::class,
+            'embeds'         => \Encoredjw\Admin\Form\Field\Embeds::class,
+            'editor'         => \Encoredjw\Admin\Form\Field\Editor::class,
+            'email'          => \Encoredjw\Admin\Form\Field\Email::class,
+            'file'           => \Encoredjw\Admin\Form\Field\File::class,
+            'hasMany'        => \Encoredjw\Admin\Form\Field\HasMany::class,
+            'hidden'         => \Encoredjw\Admin\Form\Field\Hidden::class,
+            'id'             => \Encoredjw\Admin\Form\Field\Id::class,
+            'image'          => \Encoredjw\Admin\Form\Field\Image::class,
+            'ip'             => \Encoredjw\Admin\Form\Field\Ip::class,
+            'map'            => \Encoredjw\Admin\Form\Field\Map::class,
+            'mobile'         => \Encoredjw\Admin\Form\Field\Mobile::class,
+            'month'          => \Encoredjw\Admin\Form\Field\Month::class,
+            'multipleSelect' => \Encoredjw\Admin\Form\Field\MultipleSelect::class,
+            'number'         => \Encoredjw\Admin\Form\Field\Number::class,
+            'password'       => \Encoredjw\Admin\Form\Field\Password::class,
+            'radio'          => \Encoredjw\Admin\Form\Field\Radio::class,
+            'rate'           => \Encoredjw\Admin\Form\Field\Rate::class,
+            'select'         => \Encoredjw\Admin\Form\Field\Select::class,
+            'slider'         => \Encoredjw\Admin\Form\Field\Slider::class,
+            'switch'         => \Encoredjw\Admin\Form\Field\SwitchField::class,
+            'text'           => \Encoredjw\Admin\Form\Field\Text::class,
+            'textarea'       => \Encoredjw\Admin\Form\Field\Textarea::class,
+            'time'           => \Encoredjw\Admin\Form\Field\Time::class,
+            'timeRange'      => \Encoredjw\Admin\Form\Field\TimeRange::class,
+            'url'            => \Encoredjw\Admin\Form\Field\Url::class,
+            'year'           => \Encoredjw\Admin\Form\Field\Year::class,
+            'html'           => \Encoredjw\Admin\Form\Field\Html::class,
+            'tags'           => \Encoredjw\Admin\Form\Field\Tags::class,
+            'icon'           => \Encoredjw\Admin\Form\Field\Icon::class,
+            'multipleFile'   => \Encoredjw\Admin\Form\Field\MultipleFile::class,
+            'multipleImage'  => \Encoredjw\Admin\Form\Field\MultipleImage::class,
+            'captcha'        => \Encoredjw\Admin\Form\Field\Captcha::class,
+            'listbox'        => \Encoredjw\Admin\Form\Field\Listbox::class,
         ];
 
         foreach ($map as $abstract => $class) {

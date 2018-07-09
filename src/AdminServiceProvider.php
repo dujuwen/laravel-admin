@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin;
+namespace Encoredjw\Admin;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
@@ -11,11 +11,11 @@ class AdminServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        'Encore\Admin\Console\MakeCommand',
-        'Encore\Admin\Console\MenuCommand',
-        'Encore\Admin\Console\InstallCommand',
-        'Encore\Admin\Console\UninstallCommand',
-        'Encore\Admin\Console\ImportCommand',
+        'Encoredjw\Admin\Console\MakeCommand',
+        'Encoredjw\Admin\Console\MenuCommand',
+        'Encoredjw\Admin\Console\InstallCommand',
+        'Encoredjw\Admin\Console\UninstallCommand',
+        'Encoredjw\Admin\Console\ImportCommand',
     ];
 
     /**
@@ -24,11 +24,11 @@ class AdminServiceProvider extends ServiceProvider
      * @var array
      */
     protected $routeMiddleware = [
-        'admin.auth'       => \Encore\Admin\Middleware\Authenticate::class,
-        'admin.pjax'       => \Encore\Admin\Middleware\Pjax::class,
-        'admin.log'        => \Encore\Admin\Middleware\LogOperation::class,
-        'admin.permission' => \Encore\Admin\Middleware\Permission::class,
-        'admin.bootstrap'  => \Encore\Admin\Middleware\Bootstrap::class,
+        'admin.auth'       => \Encoredjw\Admin\Middleware\Authenticate::class,
+        'admin.pjax'       => \Encoredjw\Admin\Middleware\Pjax::class,
+        'admin.log'        => \Encoredjw\Admin\Middleware\LogOperation::class,
+        'admin.permission' => \Encoredjw\Admin\Middleware\Permission::class,
+        'admin.bootstrap'  => \Encoredjw\Admin\Middleware\Bootstrap::class,
     ];
 
     /**

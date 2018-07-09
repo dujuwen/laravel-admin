@@ -1,10 +1,10 @@
 <?php
 
-namespace Encore\Admin\Traits;
+namespace Encoredjw\Admin\Traits;
 
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Tree;
+use Encoredjw\Admin\Form;
+use Encoredjw\Admin\Grid;
+use Encoredjw\Admin\Tree;
 
 trait AdminBuilder
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Widgets;
+namespace Encoredjw\Admin\Widgets;
 
 use Illuminate\Support\Fluent;
 

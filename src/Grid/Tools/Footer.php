@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Encoredjw\Admin\Grid\Tools;
 
-use Encore\Admin\Grid;
+use Encoredjw\Admin\Grid;
 
 class Footer extends AbstractTool
 {

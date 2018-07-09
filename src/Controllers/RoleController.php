@@ -1,13 +1,13 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Encoredjw\Admin\Controllers;
 
-use Encore\Admin\Auth\Database\Permission;
-use Encore\Admin\Auth\Database\Role;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Layout\Content;
+use Encoredjw\Admin\Auth\Database\Permission;
+use Encoredjw\Admin\Auth\Database\Role;
+use Encoredjw\Admin\Facades\Admin;
+use Encoredjw\Admin\Form;
+use Encoredjw\Admin\Grid;
+use Encoredjw\Admin\Layout\Content;
 use Illuminate\Routing\Controller;
 
 class RoleController extends Controller

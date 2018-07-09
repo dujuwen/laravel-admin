@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Form;
+namespace Encoredjw\Admin\Form;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form;
+use Encoredjw\Admin\Admin;
+use Encoredjw\Admin\Form;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;

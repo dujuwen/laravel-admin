@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Encoredjw\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Grid;
+use Encoredjw\Admin\Admin;
+use Encoredjw\Admin\Grid;
 
 class PerPageSelector extends AbstractTool
 {

@@ -1,7 +1,7 @@
 <?php
 
-use Encore\Admin\Auth\Database\Administrator;
-use Encore\Admin\Auth\Database\OperationLog;
+use Encoredjw\Admin\Auth\Database\Administrator;
+use Encoredjw\Admin\Auth\Database\OperationLog;
 
 class OperationLogTest extends TestCase
 {

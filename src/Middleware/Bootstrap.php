@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Middleware;
+namespace Encoredjw\Admin\Middleware;
 
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
+use Encoredjw\Admin\Form;
+use Encoredjw\Admin\Grid;
 use Illuminate\Http\Request;
 
 class Bootstrap

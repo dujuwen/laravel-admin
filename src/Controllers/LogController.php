@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Encoredjw\Admin\Controllers;
 
-use Encore\Admin\Auth\Database\Administrator;
-use Encore\Admin\Auth\Database\OperationLog;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Grid;
-use Encore\Admin\Layout\Content;
+use Encoredjw\Admin\Auth\Database\Administrator;
+use Encoredjw\Admin\Auth\Database\OperationLog;
+use Encoredjw\Admin\Facades\Admin;
+use Encoredjw\Admin\Grid;
+use Encoredjw\Admin\Layout\Content;
 use Illuminate\Routing\Controller;
 
 class LogController extends Controller

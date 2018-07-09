@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Console;
+namespace Encoredjw\Admin\Console;
 
-use Encore\Admin\Admin;
+use Encoredjw\Admin\Admin;
 use Illuminate\Console\Command;
 
 class ImportCommand extends Command

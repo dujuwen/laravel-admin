@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin;
+namespace Encoredjw\Admin;
 
-use Encore\Admin\Auth\Database\Menu;
-use Encore\Admin\Auth\Database\Permission;
+use Encoredjw\Admin\Auth\Database\Menu;
+use Encoredjw\Admin\Auth\Database\Permission;
 use Illuminate\Support\Facades\Route;
 
 abstract class Extension
