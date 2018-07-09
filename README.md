@@ -131,4 +131,7 @@ Other
 发布的包地址:
 https://packagist.org/packages/encoredjw/laravel-admin
 
+删除tag:
+git tag -d v.5.0.1
+git push origin :refs/tags/v.5.0.1
 
