@@ -41,7 +41,7 @@ class DateTime extends Presenter
 
     protected function prepare()
     {
-        $script = "$('#{$this->filter->getId()}').datetimepicker(".json_encode($this->options).');';
+        $script = "$('#{$this->filter->getId()}').datetimepicker(".json_encode($this->options, JSON_UNESCAPED_UNICODE).');';
 
         Admin::script($script);
     }

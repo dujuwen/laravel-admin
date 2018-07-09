@@ -49,8 +49,8 @@ class DateRange extends Field
     {
         $this->options['locale'] = config('app.locale');
 
-        $startOptions = json_encode($this->options);
-        $endOptions = json_encode($this->options + ['useCurrent' => false]);
+        $startOptions = json_encode($this->options, JSON_UNESCAPED_UNICODE);
+        $endOptions = json_encode($this->options + ['useCurrent' => false], JSON_UNESCAPED_UNICODE);
 
         $class = $this->getElementClassSelector();
 

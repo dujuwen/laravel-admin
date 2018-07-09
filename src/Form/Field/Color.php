@@ -49,7 +49,7 @@ class Color extends Text
      */
     public function render()
     {
-        $options = json_encode($this->options);
+        $options = json_encode($this->options, JSON_UNESCAPED_UNICODE);
 
         $this->script = "$('{$this->getElementClassSelector()}').parent().colorpicker($options);";
 

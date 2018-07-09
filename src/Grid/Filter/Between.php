@@ -107,8 +107,8 @@ class Between extends AbstractFilter
         $options['format'] = array_get($options, 'format', 'YYYY-MM-DD HH:mm:ss');
         $options['locale'] = array_get($options, 'locale', config('app.locale'));
 
-        $startOptions = json_encode($options);
-        $endOptions = json_encode($options + ['useCurrent' => false]);
+        $startOptions = json_encode($options, JSON_UNESCAPED_UNICODE);
+        $endOptions = json_encode($options + ['useCurrent' => false], JSON_UNESCAPED_UNICODE);
 
         $script = <<<EOT
             $('#{$this->id['start']}').datetimepicker($startOptions);

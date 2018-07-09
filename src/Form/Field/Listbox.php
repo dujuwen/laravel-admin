@@ -36,7 +36,7 @@ class Listbox extends MultipleSelect
             'filterPlaceHolder' => trans('admin.listbox.filter_placeholder'),
         ]);
 
-        $settings = json_encode($settings);
+        $settings = json_encode($settings, JSON_UNESCAPED_UNICODE);
 
         $this->script = <<<SCRIPT
 

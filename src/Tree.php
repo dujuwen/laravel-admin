@@ -226,7 +226,7 @@ class Tree implements Renderable
         $confirm = trans('admin.confirm');
         $cancel = trans('admin.cancel');
 
-        $nestableOptions = json_encode($this->nestableOptions);
+        $nestableOptions = json_encode($this->nestableOptions, JSON_UNESCAPED_UNICODE);
 
         return <<<SCRIPT
 

@@ -159,7 +159,7 @@ class Text extends Presenter
      */
     public function inputmask($options = [], $icon = 'pencil') : self
     {
-        $options = json_encode($options);
+        $options = json_encode($options, JSON_UNESCAPED_UNICODE);
 
         Admin::script("$('#filter-modal input.{$this->filter->getId()}').inputmask($options);");
 

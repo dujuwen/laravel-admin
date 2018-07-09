@@ -20,7 +20,7 @@ class Decimal extends Text
 
     public function render()
     {
-        $options = json_encode($this->options);
+        $options = json_encode($this->options, JSON_UNESCAPED_UNICODE);
 
         $this->script = "$('{$this->getElementClassSelector()}').inputmask($options);";
 

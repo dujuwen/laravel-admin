@@ -19,7 +19,7 @@ class Mobile extends Text
 
     public function render()
     {
-        $options = $this->json_encode_options($this->options);
+        $options = $this->json_encode_options($this->options, JSON_UNESCAPED_UNICODE);
 
         $this->script = <<<EOT
 
@@ -50,7 +50,7 @@ EOT;
         }
 
         // Now encode the array to json format
-        $json = json_encode($options);
+        $json = json_encode($options, JSON_UNESCAPED_UNICODE);
 
         // Replace the special keys with the original string.
         $json = str_replace($replace_keys, $value_arr, $json);

@@ -79,7 +79,7 @@ SCRIPT;
             'url' => $url.'?'.http_build_query($parameters),
         ];
 
-        $ajaxOptions = json_encode(array_merge($ajaxOptions, $options));
+        $ajaxOptions = json_encode(array_merge($ajaxOptions, $options), JSON_UNESCAPED_UNICODE);
 
         $this->script = <<<EOT
 

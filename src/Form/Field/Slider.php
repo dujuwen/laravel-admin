@@ -23,7 +23,7 @@ class Slider extends Field
 
     public function render()
     {
-        $option = json_encode($this->options);
+        $option = json_encode($this->options, JSON_UNESCAPED_UNICODE);
 
         $this->script = "$('{$this->getElementClassSelector()}').ionRangeSlider($option)";
 

@@ -3,7 +3,7 @@
         $toastr     = Session::get('toastr');
         $type       = array_get($toastr->get('type'), 0, 'success');
         $message    = array_get($toastr->get('message'), 0, '');
-        $options    = json_encode($toastr->get('options', []));
+        $options    = json_encode($toastr->get('options', []), JSON_UNESCAPED_UNICODE);
     @endphp
     <script>
         $(function () {

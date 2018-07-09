@@ -177,7 +177,7 @@ class File extends Field
             $this->setupPreviewOptions();
         }
 
-        $options = json_encode($this->options);
+        $options = json_encode($this->options, JSON_UNESCAPED_UNICODE);
 
         $this->script = <<<EOT
 

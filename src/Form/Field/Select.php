@@ -197,7 +197,7 @@ EOT;
             'url' => $url.'?'.http_build_query($parameters),
         ];
 
-        $ajaxOptions = json_encode(array_merge($ajaxOptions, $options));
+        $ajaxOptions = json_encode(array_merge($ajaxOptions, $options), JSON_UNESCAPED_UNICODE);
 
         $this->script = <<<EOT
 
@@ -288,7 +288,7 @@ EOT;
             'placeholder' => $this->label,
         ], $this->config);
 
-        $configs = json_encode($configs);
+        $configs = json_encode($configs, JSON_UNESCAPED_UNICODE);
 
         if (empty($this->script)) {
             $this->script = "$(\"{$this->getElementClassSelector()}\").select2($configs);";

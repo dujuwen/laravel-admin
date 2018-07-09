@@ -142,7 +142,7 @@ class Editable extends AbstractDisplayer
 
         $this->buildEditableOptions(func_get_args());
 
-        $options = json_encode($this->options);
+        $options = json_encode($this->options, JSON_UNESCAPED_UNICODE);
 
         Admin::script("$('.$class').editable($options);");
 
