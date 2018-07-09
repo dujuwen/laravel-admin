@@ -182,7 +182,7 @@ EOT;
     protected function viewAction()
     {
         return <<<EOT
-<a href="{$this->getResource()}/{$this->getKey()}/view">
+<a href="{$this->getResource()}/{$this->getKey()}">
     <i class="fa fa-eye"></i>
 </a>
 EOT;
