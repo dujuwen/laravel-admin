@@ -131,16 +131,17 @@ class Actions extends AbstractDisplayer
         }
 
         $actions = $this->prepends;
+
+        if ($this->allowView) {
+            array_push($actions, $this->viewAction());
+        }
+
         if ($this->allowEdit) {
             array_push($actions, $this->editAction());
         }
 
         if ($this->allowDelete) {
             array_push($actions, $this->deleteAction());
-        }
-
-        if ($this->allowView) {
-            array_push($actions, $this->viewAction());
         }
 
         $actions = array_merge($actions, $this->appends);
@@ -182,7 +183,7 @@ EOT;
     {
         return <<<EOT
 <a href="{$this->getResource()}/{$this->getKey()}/view">
-    <i class="fa fa-edit"></i>
+    <i class="fa fa-eye"></i>
 </a>
 EOT;
     }
