@@ -5,3 +5,5 @@ composer.phar
 composer.lock
 *.project
 .idea/
+org.eclipse.php.core.prefs
+.buildpath
