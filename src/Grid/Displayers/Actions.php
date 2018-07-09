@@ -27,6 +27,11 @@ class Actions extends AbstractDisplayer
     protected $allowDelete = true;
 
     /**
+     * @var bool
+     */
+    protected $allowView = true;
+
+    /**
      * @var string
      */
     protected $resource;
@@ -85,6 +90,16 @@ class Actions extends AbstractDisplayer
     }
 
     /**
+     * Disable view.
+     *
+     * @return void.
+     */
+    public function disableView()
+    {
+        $this->allowView = false;
+    }
+
+    /**
      * Set resource of current resource.
      *
      * @param $resource
@@ -124,6 +139,10 @@ class Actions extends AbstractDisplayer
             array_push($actions, $this->deleteAction());
         }
 
+        if ($this->allowView) {
+            array_push($actions, $this->viewAction());
+        }
+
         $actions = array_merge($actions, $this->appends);
 
         return implode('', $actions);
@@ -154,6 +173,15 @@ class Actions extends AbstractDisplayer
     {
         return <<<EOT
 <a href="{$this->getResource()}/{$this->getKey()}/edit">
+    <i class="fa fa-edit"></i>
+</a>
+EOT;
+    }
+
+    protected function viewAction()
+    {
+        return <<<EOT
+<a href="{$this->getResource()}/{$this->getKey()}/view">
     <i class="fa fa-edit"></i>
 </a>
 EOT;
