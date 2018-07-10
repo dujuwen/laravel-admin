@@ -36,6 +36,6 @@ abstract class AbstractTool implements Renderable
      */
     public function __toString()
     {
-        return $this->render();
+        return (string) $this->render();
     }
 }
