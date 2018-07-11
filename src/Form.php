@@ -289,7 +289,11 @@ class Form
                 continue;
             }
             $this->deleteFilesAndImages($id);
-            $this->model->find($id)->delete();
+
+            $model = $this->model->find($id);
+            if ($model) {
+                $model->delete();
+            }
         }
 
         return true;
@@ -633,7 +637,7 @@ class Form
         if (array_key_exists('_orderable', $input)) {
             $model = $this->model->find($id);
 
-            if ($model instanceof Sortable) {
+            if ($model && $model instanceof Sortable) {
                 $input['_orderable'] == 1 ? $model->moveOrderUp() : $model->moveOrderDown();
 
                 return true;
