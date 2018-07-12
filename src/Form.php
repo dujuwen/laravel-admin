@@ -327,17 +327,17 @@ class Form
     {
         $data = Input::all();
 
+        // Handle validation errors.
+        if ($validationMessages = $this->validationMessages($data)) {
+            return back()->withInput()->withErrors($validationMessages);
+        }
+
         if (method_exists($this->model, 'storeFormDataChange')) {
             $newData = $this->model->storeFormDataChange($data);
             if (is_array($newData) && count($newData)) {
                 $data = $newData;
                 $newData = null;
             }
-        }
-
-        // Handle validation errors.
-        if ($validationMessages = $this->validationMessages($data)) {
-            return back()->withInput()->withErrors($validationMessages);
         }
 
         if (($response = $this->prepare($data)) instanceof Response) {
