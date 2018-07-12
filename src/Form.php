@@ -327,7 +327,7 @@ class Form
     {
         $data = Input::all();
 
-        if (in_array('storeFormDataChange', get_class_methods($this->model))) {
+        if (method_exists($this->model, 'storeFormDataChange')) {
             $newData = $this->model->storeFormDataChange($data);
             if (is_array($newData) && count($newData)) {
                 $data = $newData;
