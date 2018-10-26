@@ -36,7 +36,7 @@ class Permission
         }
 
         $user = Admin::user();
-        if ($user && ! $user instanceof Administrator) {
+        if ($user && $user instanceof \App\Models\User) {
             //非管理员登录需要退出当前登录用户
             Auth::logout();
         }
