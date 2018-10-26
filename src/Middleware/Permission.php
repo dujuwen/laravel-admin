@@ -6,6 +6,8 @@ use Encoredjw\Admin\Auth\Permission as Checker;
 use Encoredjw\Admin\Facades\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
+use Encoredjw\Admin\Auth\Database\Administrator;
 
 class Permission
 {
@@ -31,6 +33,12 @@ class Permission
 
         if ($this->checkRoutePermission($request)) {
             return $next($request);
+        }
+
+        $user = Admin::user();
+        if ($user && ! $user instanceof Administrator) {
+            //非管理员登录需要退出当前登录用户
+            Auth::logout();
         }
 
         if (!Admin::user()->allPermissions()->first(function ($permission) use ($request) {
